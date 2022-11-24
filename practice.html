@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Practice</h1>
+<h2>Name: Nelson Boro</h2>
+
+<p>The numbers array contains:</p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+
+<script>
+const carsArray = ["Lexus", "GMC", "BMW", "Venza", "Kia"];
+
+
+
+var comb = "";
+for(var i = 0; i<carsArray.length; i++){
+    comb = comb + carsArray[i]+", ";
+}
+document.getElementById("demo1").innerHTML = comb;
+
+var comb = "";
+carsArray.shift();
+for(var i = 0; i<carsArray.length; i++){
+    comb = comb + carsArray[i]+", ";
+}
+document.getElementById("demo2").innerHTML = comb;
+
+document.getElementById("demo3").innerHTML = "I'll give you "+carsArray[1];
+
+</script>
+
+</body>
+</html>

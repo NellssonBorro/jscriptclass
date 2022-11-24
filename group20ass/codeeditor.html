@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group20 Project | Javascript Browser Code Editor</title>
+
+    <link rel="stylesheet" href="codemirror-5.65.9/lib/codemirror.css">
+    <script src="codemirror-5.65.9/lib/codemirror.js"></script>
+
+    <script src="codemirror-5.65.9/mode/htmlmixed/htmlmixed.js"></script>
+
+    <script src="codemirror-5.65.9/addon/edit/matchbrackets.js"></script>
+    <script src="codemirror-5.65.9/addon/edit/closebrackets.js"></script>
+    <script src="codemirror-5.65.9/addon/selection/active-line.js"></script>
+    <link rel="stylesheet" href="codemirror-5.65.9/theme/material-darker.css">
+
+    <script src="codeeditor.js"></script>
+    <link rel="stylesheet" href="codeeditor.css">
+
+</head>
+<body>
+    <div id="intro">
+        <h2>Group 20 Javascript Group Assignment</h2>
+        <h1>Javascript Browser Code Editor</h1>
+    </div>
+    
+    <div class="container">
+        <div class="code-section">
+            <div id="code-header" class="code-section-header">
+                <span class="sub-head">
+                    <h1>Editor </h1>
+                    Type your code here
+                </span>
+                <div>
+                    <button id="code-clear" class="run">Clear</button>
+                    <button id="code-run" class="run">Run</button>
+                </div>
+            </div>
+            <textarea class="code-textarea " name="" id="code-textarea" cols="30" rows="10"></textarea>
+        </div>
+        <div class="preview-section">
+            <div id="preview-header" class="preview-section-header">
+                <span class="sub-head"><h1 >Preview</h1></span>
+                <button id="preview-clear" class="clear">Clear</button>
+            </div>
+            <textarea class="preview-textarea" name="" id="preview-textarea" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+</body>
+</html>
